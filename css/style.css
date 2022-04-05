@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    outline: none;
+    border:none;
+    text-decoration:none;
+    text-transform: capitalize;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+html::-webkit-scrollbar-track{
+    background-color: white;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: tomato;
+}
+
+header{
+    min-height: 50px;
+    overflow: hidden;
+    padding: 8px 25px;
+    padding-bottom: 0;
+}
+#header2 .header-box{
+    display: flex;
+    justify-content: space-between;
+    background: #ddd;
+}
+.logo-container{
+    background: rgba(95, 22, 22, .2);
+    min-height: 45px;
+    padding-top:10px;
+    padding-bottom:5px;
+    padding-left:8px;
+    margin-bottom: 10px;;
+}
+a.logo{
+    font-size: 4rem;
+    line-height: 25px;
+    margin-bottom: 15px;
+    display: block;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(41, 38, 38);
+    padding: 15px 0;
+    margin-bottom:10px
+}
+.navbar .nav{
+    /* align-self: flex-start; */
+    justify-content: space-around;
+    gap: 15px;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: flex-start;
+
+}
+ul li{
+    list-style: none;
+}
+.nav a{font-size: 14px;color: #fff;font-weight: bold; padding: 5px 8px;}
+.navbar .nav a{
+    border: 1px solid red;
+}
+section{
+    padding: 8px 25px;
+    padding-top:0;
+}
+.banner .box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30rem;
+    background: rgb(8, 54, 93);
+    border: 1px solid red;
+}
+.banner .box{
+    color: #fff;
+    font-size: 14px;
+    padding: 4px 100px;text-align: center;
+}
+#intro .box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20rem;
+    background: rgb(37, 4, 126);
+    border: 1px solid red;
+}
+
+.main-container .box-container{
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    background-color: #2196F3;
+    
+    /* width:100%;   */
+}
+#layout1 .box-container{
+    grid-template-columns: 1fr 3fr;
+}
+#layout2 .box-container{
+    grid-template-columns: 1fr 3fr 1fr;
+}
+#layout3 .box-container{
+    grid-template-columns: 1fr 1fr 7fr;
+    /* grid-auto-rows: 100px; */
+}
+#layout5 .box-container{
+    grid-template-columns: 3fr 1fr 2fr;
+    /* grid-auto-rows: 100px; */
+}
+#layout4.grid-container .box-container{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto auto auto;
+}
+
+#layout4 .box{
+    border: 1px solid #000;
+    background-color: #2196F3;
+    text-align: center;
+    min-height: 100px;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    color: #fff;font-size: 15px;
+}
+#grid-two .box-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+}
+
+#grid-two .box{
+    background: gray;
+    min-height: 100px;
+    font-size: 14px;
+    display: flex;align-items: center;
+    justify-content: center;flex-wrap: wrap;
+}
+  
+#layout3 .leftsidebar{
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+    grid-column: 1 / span 2;
+    /* grid-row-start: 1;
+    grid-row-end: 3; */
+    grid-row: 1 / 3;
+}
+#layout5 .item1{
+    grid-column: 1 / span 2;
+    grid-row: 1 /3;
+}
+.main-container .sidebar{
+    margin-right:15px;
+}
+.main-container .box{
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+footer{
+    padding: 10px;background: yellow;
+}
+footer p{
+    text-align: center;font-size: 14px; color: #000
+}
+footer p span{
+    color:rgb(8, 54, 93);
+    padding-left: 5px;
+    font-weight: bold;
+}
+
+.footer5 .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+}
