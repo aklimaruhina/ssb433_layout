@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
     <style>
         header{
             height: 100px;background: red;
@@ -18,18 +20,52 @@
             float: left;
         }
         .container{
-            overflow: hidden;
-            border: 10px solid yellow;}
+             overflow: hidden; 
+            border: 10px solid yellow;
+            clear: both;
+        }
         .contact{
-            width: 65%;
+            width: 65.33%;
             background: green;
-            float: right;
+            float: left;
+            height: auto;
+            margin-left: 50px;
+            min-height: 300px;
+            padding: 15px 30px;
+            color: #fff;
+            box-sizing:border-box;
+
         }
         .footer{
             background: teal;
             height: 100px;
             clear:both;
         }
+
+        .border{border: 1px solid #ddd;padding: 15px;margin-bottom: 8px;}
+        .border > h1:first-child{text-align: center;}
+        .link_tag a{
+            color: #fff;
+            text-decoration: none;font-size: 14px;font-weight: bold;display: block;
+        }
+        .link_tag a:hover{color: blue;}
+        .img_galary{
+            margin: auto;text-align: center;
+            background: #fff;box-sizing: border-box;
+        }
+        .img_galary img{
+            display: inline-block;
+            min-height: 250px;
+            margin: 10px 8px;
+            width: 230px;
+        }
+        p{font-size: 16px;}
+        .heading_tag{background: tomato}
+        .paragraph_tag{background: orange}
+        .link_tag{background: DodgerBlue}
+        .img_tag{background: SlateBlue}
+        .formate_tag{background: Violet}
+        .quote_tag {background: gray}
 
     </style>
 </head>
@@ -40,7 +76,115 @@
         </header>
         <div class="container">
             <div class="blog h_150"></div>
-            <div class="contact h_150"></div>
+            <div class="contact h_150">
+                <div class="heading_tag border">
+                    <h1>HTML Headings</h1>
+                    <p>HTML headings are defined with the < h1> to < h6> tags.< h1> defines the most important heading. <h 6> defines the least important heading: 
+                    Search engines use the headings to index the structure and content of your web pages.Users often skim a page by its headings. It is important to use headings to show the document structure.<h 1> headings should be used for main headings, followed by <h 2> headings, then the less important <h 3>, and so on.</p>
+                    <p>
+                        <h1>This is heading 1</h1>
+                        <h2>This is heading 2</h2>
+                        <h3>This is heading 3</h3>
+                        <h4>This is heading 4</h4>
+                        <h5>This is heading 5</h5>
+                        <h6>This is heading 6</h6>
+                    </p>
+                </div>
+                <div class="paragraph_tag border">
+                    <h1>HTML Paragraphs</h1>
+                    <p>HTML paragraphs are defined with the < p>  tag: A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.</p>
+                    <hr>
+                    <p>This is a paragraph.</p>
+                    <p style="color:red">This is another paragraph.</p>
+                    <p style="background-color:tomato;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>In some situations, when the attribute value itself contains double quotes, it is necessary to use single quotes:</p>
+                    <p>Move your mouse over the paragraphs below to see the effect:</p>
+
+                    <p title='John "ShotGun" Nelson'>John with double quotes</p>
+                    <p title="John 'ShotGun' Nelson">John with single quotes</p>
+                    <hr>
+                    <pre>
+                      My Bonnie lies over the ocean.
+
+                      My Bonnie lies over the sea.
+
+                      My Bonnie lies over the ocean.
+
+                      Oh, bring back my Bonnie to me.
+                    </pre>
+                </div>
+                <div class="link_tag border">
+                    <h1>HTML Links</h1>
+                    <p>HTML links are defined with the < a> tag:</p>
+                    <a href="www.google.com" target="_blank">Lets browse some google</a> <br>
+                    <a href="mailto:aklima@mail.com">Send me Mail</a> <br>
+                    <a href="tel:tel:0148485555">Telephone me</a> <br>
+                    <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+                    <a href="#">
+                        <img src="https://via.placeholder.com/250" alt="image" />
+                    </a>
+                </div>
+                <div class="img_tag border">
+                    <h1>HTML Images</h1>
+                    <p>HTML images are defined with the <img > tag.The source file (src), alternative text (alt), width, and height are provided as attributes:</p>
+                    <div class="img_galary">
+                        <img src="img/gallery-1.jpg">
+                        <img src="img/gallery-2.jpg">
+                        <img src="img/gallery-3.jpg">
+                        <img src="img/gallery-4.jpg">
+                        <img src="img/gallery-5.jpg">
+                        <img src="img/gallery-6.jpg">
+                    </div>
+                </div>
+                <div class="formate_tag border">
+                    <h1>Text formatting</h1>
+                    <p>HTML contains several elements for defining text with a special meaning.Formatting elements were designed to display special types of text:</p>
+                    <ul>
+                        <li><b> - Bold text b tag </b></li>
+                        <li><strong> - Important text strong tag </strong></li>
+                        <li><i> - Italic text i tag</i></li>
+                        <li><em> - Emphasized text em tag </em> </li>
+                        <li><mark> - Marked text mark tag</mark> </li>
+                        <li><small> - Smaller text small tag </small></li>
+                        <li><del> - Deleted text del tag </del></li>
+                        <li><ins> - Inserted text ins tag </ins></li>
+                        <li><sub> - Subscript text sub tag </sub></li>
+                        <li><sup> - Superscript text sup tag</sup></li>
+                        
+                    </ul>
+                </div>
+                <div class="quote_tag border">
+                    <h1>HTML Quotation and Citation Elements</h1>
+                    <p>There are include blockquote, q, abbr, address, cite, bdo tag </p>
+                    <p>Here is a quote from WWF's website:</p>
+                    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+                    For 50 years, WWF has been protecting the future of nature.
+                    The world's leading conservation organization,
+                    WWF works in 100 countries and is supported by
+                    1.2 million members in the United States and
+                    close to 5 million globally.
+                    </blockquote>
+                    <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+                    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+                    <address>
+                    Written by John Doe.<br>
+                    Visit us at:<br>
+                    Example.com<br>
+                    Box 564, Disneyland<br>
+                    USA
+                    </address>
+                    <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+                    <bdo dir="rtl">This text will be written from right to left</bdo>
+
+
+
+                </div>
+            </div>
         </div>
         <div class="footer"></div>
     </div>

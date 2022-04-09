@@ -1,0 +1,61 @@
+<html>
+<head>
+	<title>layout 5</title>
+	<style type="text/css">
+
+	.wrapper{
+		border: 1px solid black;
+		min-height: 600px;
+		box-sizing: border-box;
+		overflow: hidden;
+		background: red;
+		margin: 0 auto;
+	}
+	.logo{text-align: center;height: 50px;background: gray;padding: 15px 20px;}
+	
+	header{
+		min-height: 130px;display: flex;align-items:center;justify-content: center;background: gray;margin: 10px 0;
+
+	}
+	.navbar{width: 100%;display: block;margin-bottom: 15px;overflow: hidden;}
+	.navbar a{width: 15%;display: inline-block;float: left;padding: 10px 15px; background: gray;text-decoration: none;margin-right: 15px;text-align: center;color: #fff}
+	.main_body{width: 100%;display: block;margin: 15px 0;overflow: hidden;border: 1px solid blue;}
+	.column{float: left;display: inline-block;}
+	.center_item{display: flex;justify-content: center;align-items:center;}
+	.left_column{width: 60%;min-height: 300px;margin-right: 10px;background: gray;border: 3px solid green;}
+	.right_column{width: 36%;border: 1px solid yellow;min-height: 300px;overflow: hidden;border: 3px solid tomato}
+	.box{border: 1px solid blue;min-height: 134px; margin-bottom: 15px;background: gray}
+	footer{
+		background: gray;padding: 15px 20px;margin-top: 15px;text-align: center;
+	}
+	</style>
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<div class="logo"><p>company and logo</p></div>
+		<header>
+			<p>Header</p>
+		</header>
+		<div class="navbar">
+			<a href="#">Navigation</a>
+			<a href="#">Home</a>	
+			<a href="#">About</a>
+			<a href="#">Post</a>
+		</div>
+		<div class="main_body">
+			<div class="left_column column center_item">
+				<p>About</p>
+			</div> <!--width 60% --> 
+			<div class="right_column column">   <!-- width 40% -->
+				<div class="box center_item">Qquick Links</div>  <!-- box are displayed as block -->
+				<div class="box center_item"> Quick links</div>
+			</div>
+		</div>
+		<footer>
+			<p>&copy;Copyright by your name</p>
+		</footer>
+	</div>
+</body>
+</html>
