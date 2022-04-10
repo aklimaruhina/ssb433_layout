@@ -1,83 +1,31 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Homework for 7th March</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-
-    <style>
-        header{
-            height: 100px;background: red;
-        }
-        .h_150{height: 150px;}
-        .blog{
-            background: black;
-            width: 30%;
-            float: left;
-        }
-        .container{
-             overflow: hidden; 
-            border: 10px solid yellow;
-            clear: both;
-        }
-        .contact{
-            width: 65.33%;
-            background: green;
-            float: left;
-            height: auto;
-            margin-left: 50px;
-            min-height: 300px;
-            padding: 15px 30px;
-            color: #fff;
-            box-sizing:border-box;
-
-        }
-        .footer{
-            background: teal;
-            height: 100px;
-            clear:both;
-        }
-
-        .border{border: 1px solid #ddd;padding: 15px;margin-bottom: 8px;}
-        .border > h1:first-child{text-align: center;}
-        .link_tag a{
-            color: #fff;
-            text-decoration: none;font-size: 14px;font-weight: bold;display: block;
-        }
-        .link_tag a:hover{color: blue;}
-        .img_galary{
-            margin: auto;text-align: center;
-            background: #fff;box-sizing: border-box;
-        }
-        .img_galary img{
-            display: inline-block;
-            min-height: 250px;
-            margin: 10px 8px;
-            width: 230px;
-        }
-        p{font-size: 16px;}
-        .heading_tag{background: tomato}
-        .paragraph_tag{background: orange}
-        .link_tag{background: DodgerBlue}
-        .img_tag{background: SlateBlue}
-        .formate_tag{background: Violet}
-        .quote_tag {background: gray}
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
 </head>
 <body>
     <div class="wrapper">
         <header>
-
+            <h1>Welcome to my Website.Thank You.</h1>
         </header>
         <div class="container">
-            <div class="blog h_150"></div>
+            <div class="blog h_150">
+                <aside>
+                <a href="#heading">Heading Tag</a>
+                <a href="#paragraph">Paragraph tag</a>
+                <a href="#formate">Formate Tage</a>
+                <a href="#quote">Quote Tag</a>
+                <a href="#table">Table Tag</a>
+                <a href="#list">List Tag</a>
+            </aside>
+            </div>
             <div class="contact h_150">
-                <div class="heading_tag border">
+                <div class="heading_tag border" id="heading">
                     <h1>HTML Headings</h1>
                     <p>HTML headings are defined with the < h1> to < h6> tags.< h1> defines the most important heading. <h 6> defines the least important heading: 
                     Search engines use the headings to index the structure and content of your web pages.Users often skim a page by its headings. It is important to use headings to show the document structure.<h 1> headings should be used for main headings, followed by <h 2> headings, then the less important <h 3>, and so on.</p>
@@ -90,7 +38,7 @@
                         <h6>This is heading 6</h6>
                     </p>
                 </div>
-                <div class="paragraph_tag border">
+                <div class="paragraph_tag border" id="paragraph">
                     <h1>HTML Paragraphs</h1>
                     <p>HTML paragraphs are defined with the < p>  tag: A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.</p>
                     <hr>
@@ -141,7 +89,7 @@
                         <img src="img/gallery-6.jpg">
                     </div>
                 </div>
-                <div class="formate_tag border">
+                <div class="formate_tag border" id="formate">
                     <h1>Text formatting</h1>
                     <p>HTML contains several elements for defining text with a special meaning.Formatting elements were designed to display special types of text:</p>
                     <ul>
@@ -158,7 +106,7 @@
                         
                     </ul>
                 </div>
-                <div class="quote_tag border">
+                <div class="quote_tag border" id="quote">
                     <h1>HTML Quotation and Citation Elements</h1>
                     <p>There are include blockquote, q, abbr, address, cite, bdo tag </p>
                     <p>Here is a quote from WWF's website:</p>
@@ -184,9 +132,237 @@
 
 
                 </div>
+                <div class="table_tag border" id="table">
+                    <h1>Table tag</h1>
+                    <p>HTML tables allow web developers to arrange data into rows and columns.
+                        Each table cell is defined by a < td> and a </ td> tag.td stands for table data.Everything between < td> and </ td> are the content of the table cell.</p>
+                    <cite>Note: table data elements are the data containers of the table.They can contain all sorts of HTML elements; text, images, lists, other tables, etc.</cite>
+                    <p>Each table row starts with a < tr> and end with a </ tr> tag.tr stands for table row.You can have as many rows as you like in a table, just make sure that the number of cells are the same in each row.</p>
+                    <cite><strong>Note:</strong>There are times where a row can have less or more cells than another. You will learn about that in a later chapter.</cite>
+                    <p>Sometimes you want your cells to be headers, in those cases use the < th> tag instead of the < td> tag:By default, the text in < th> elements are bold and centered, but you can change that with CSS.</p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>Company</th>
+                            <th>Contact</th>
+                            <th>Country</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                            <td>Alfreds Futterkiste</td>
+                            <td>Maria Anders</td>
+                            <td>Germany</td>
+                          </tr>
+                          <tr>
+                            <td>Centro comercial Moctezuma</td>
+                            <td>Francisco Chang</td>
+                            <td>Mexico</td>
+                          </tr>
+                      </tbody>
+                    </table>
+
+                    <table style="width:100%" class="table_two">
+                      <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Age</th>
+                      </tr>
+                      <tr>
+                        <td>Jill</td>
+                        <td>Smith</td>
+                        <td>50</td>
+                      </tr>
+                      <tr>
+                        <td>Eve</td>
+                        <td>Jackson</td>
+                        <td>94</td>
+                      </tr>
+                      <tr>
+                        <td>Eva</td>
+                        <td>Jack</td>
+                        <td>94</td>
+                      </tr>
+                    </table>
+                    <table>
+                        <caption>Vertical Table Header</caption>
+                        <table>
+                          <tr>
+                            <th>Firstname</th>
+                            <td>Jill</td>
+                            <td>Eve</td>
+                          </tr>
+                          <tr>
+                            <th>Lastname</th>
+                            <td>Smith</td>
+                            <td>Jackson</td>
+                          </tr>
+                          <tr>
+                            <th>Age</th>
+                            <td>94</td>
+                            <td>50</td>
+                          </tr>
+                        </table>
+                    </table>
+                    <table>
+                        <caption style="margin-bottom:15px;">Header for Multiple Columns</caption>
+                      <tr>
+                        <th colspan="2">Name</th>
+                        <th>Age</th>
+                      </tr>
+                      <tr>
+                        <td>Jill</td>
+                        <td>Smith</td>
+                        <td>50</td>
+                      </tr>
+                      <tr>
+                        <td>Eve</td>
+                        <td>Jackson</td>
+                        <td>94</td>
+                      </tr>
+                    </table>
+
+                    <table>
+                      <caption>Monthly savings</caption>
+                      <tr>
+                        <th>Month</th>
+                        <th>Savings</th>
+                      </tr>
+                      <tr>
+                        <td>January</td>
+                        <td>$100</td>
+                      </tr>
+                      <tr>
+                        <td>February</td>
+                        <td>$50</td>
+                      </tr>
+                    </table>
+                    <table>
+                        <thead>
+                            <caption>Html Table rowspan</caption>
+                        </thead>
+                      <tr>
+                        <th>Name</th>
+                        <td>Jill</td>
+                      </tr>
+                      <tr>
+                        <th rowspan="2">Phone</th>
+                        <td>555-1234</td>
+                      </tr>
+                      <tr>
+                        <td>555-8745</td>
+                    </tr>
+                    </table>
+                    <table>
+                        <colgroup>
+                          <col span="2" style="background-color: #D6EEEE">
+                              <col span="3" style="background-color: pink">
+
+                        </colgroup>
+                        <caption>Table Col Group</caption>
+                        <tr>
+                        <th>MON</th>
+                        <th>TUE</th>
+                        <th>WED</th>
+                        <th>THU</th>
+                        <th>FRI</th>
+                        <th>SAT</th>
+                        <th>SUN</th>
+                        </tr>
+                        <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        </tr>
+                        <tr>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                        </tr>
+                        <tr>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                        </tr>
+                        <tr>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                        </tr>
+                        </table>
+                </div>
+                <div class="list_tag border" id="list">
+                    <h1>Html List</h1>
+                    <p>HTML lists allow web developers to group a set of related items in lists.</p>
+                    <h1>Unordered HTML List</h1>
+                    <p>An unordered list starts with the < ul> tag. Each list item starts with the < li> tag.The list items will be marked with bullets (small black circles) by default:</p>
+                    <ul>
+                      <li>Coffee</li>
+                      <li>Tea</li>
+                      <li>Milk</li>
+                    </ul>
+                    <h2>Multi level order List</h2>
+                    <h1>Ordered HTML List</h1>
+                    <p>An ordered list starts with the < ol> tag. Each list item starts with the < li> tag.The list items will be marked with numbers by default:</p>
+                    <ol>
+                      <li>Coffee</li>
+                      <li>Tea</li>
+                      <li>Milk</li>
+                    </ol>
+                    <h2>Multi level unorder list</h2>
+                    <ul class="roman">
+                        <li>First</li>
+                        <li>Second
+                            <ul class="square">
+                                <li>Sub of Second</li>
+                                <li>Another Sub</li>
+                            </ul>
+                         </li>
+                        <li>Third</li>
+                        <li>Fourth</li>
+                    </ul>
+                    <ol>
+                     <li>First</li>
+                     <li>Second
+                     <ol style="list-style-type: lower-alpha; padding-bottom: 0;">
+                      <li style="margin-left:2em">Sub of Second</li>
+                      <li style="margin-left:2em; padding-bottom: 0;">Another Sub</li>
+                     </ol>
+                     </li>
+                     <li>Third</li>
+                     <li>Fourth </li>
+                    </ol>
+                    <h2>Html Description list</h2>
+                    <p>HTML also supports description lists.A description list is a list of terms, with a description of each term.The < dl> tag defines the description list, the < dt> tag defines the term (name), and the < dd> tag describes each term:</p>
+                    <dl>
+                      <dt>Coffee</dt>
+                      <dd>- black hot drink</dd>
+                      <dt>Milk</dt>
+                      <dd>- white cold drink</dd>
+                    </dl>
+
+                </div>
             </div>
         </div>
-        <div class="footer"></div>
+        <div class="footer">
+            <p>&copy;Copyright By <strong>Aklima akther</strong><span>Ruhina</span></p>
+        </div>
     </div>
 </body>
 </html>

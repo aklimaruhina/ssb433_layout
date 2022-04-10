@@ -1,0 +1,100 @@
+*{
+    
+    box-sizing: border-box;
+    outline: none;
+    border:none;
+    text-decoration:none;
+    text-transform: capitalize;
+}
+html{
+    overflow-x: hidden;
+}
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+html::-webkit-scrollbar-track{
+    background-color: white;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: slateblue;
+}
+html{scroll-behavior:smooth;}
+header{height: 100px;background: red;display: flex;align-items:center;justify-content: center;font-size: 25px;font-weight: bold;color: #fff;}
+.h_150{height: 150px;}
+.blog{
+    background: silver;
+    width: 30%;
+    float: left;
+    min-height: 200px;
+    height: auto;
+}
+.blog aside{padding: 15px 20px;}
+.container{
+     overflow: hidden; 
+    border: 10px solid yellow;
+    clear: both;
+}
+.contact{
+    width: 65.33%;
+    background: green;
+    float: left;
+    height: auto;
+    margin-left: 50px;
+    min-height: 300px;
+    padding: 15px 30px;
+    color: #fff;
+    box-sizing:border-box;
+
+}
+.footer{
+    background: lightslategray;
+    height: 100px;
+    color: #fff;text-align: center;
+    clear:both;display: flex;align-items:center;justify-content:center;
+}
+.footer span{color: silver; padding-left: 8px;font-weight: bold;font-size: 16px;text-transform: uppercase;}
+
+.border{border: 1px solid #ddd;padding: 15px;margin-bottom: 8px;}
+.border > h1:first-child{text-align: center;}
+.link_tag a{
+    color: #fff;
+    text-decoration: none;font-size: 14px;font-weight: bold;display: block;
+}
+.link_tag a:hover{color: blue;}
+.img_galary{
+    margin: auto;text-align: center;
+    background: #fff;box-sizing: border-box;
+}
+.img_galary img{
+    display: inline-block;
+    min-height: 250px;
+    margin: 10px 8px;
+    width: 230px;
+}
+p{font-size: 16px;}
+.heading_tag{background: tomato}
+.paragraph_tag{background: orange}
+.link_tag{background: DodgerBlue}
+.img_tag{background: SlateBlue}
+.formate_tag{background: Violet}
+.quote_tag {background: gray}
+.table_tag{background: brown}
+.list_tag{background: cadetblue}
+
+.blog aside a{display: block;color: #fff;padding: 8px;border: 1px solid lightcyan;
+    margin-bottom: 15px;transition: 2s linear;font-size: 16px;font-weight: bold;}
+.blog aside a:hover{color: blue;background: lightblue;}
+table{width:100%;margin-bottom: 15px;background: #fff;color: #000;}
+table, th, td {border: 1px solid black;  border-collapse: collapse;padding: 15px;  border-spacing: 10px;}
+/*th, td {background-color: #96D4D4;}*/
+tr:hover {background-color: #D6EEEE;}
+
+.table_two, .table_two th, .table_two td{border: 1px dashed white;text-align: center;}
+caption{margin-bottom: 15px;}
+.table_two tr:nth-child(odd){
+  background: red;
+  border: 1px solid blue;
+}
+.roman {list-style-type: lower-roman;}
+.square {list-style-type: square;margin-left: -2em;}
+ul li{padding: 5px 0}
